@@ -1,0 +1,27 @@
+<!-- This is a placeholder SVG for multiple tooth gems -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sparkle">
+      <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  <ellipse cx="400" cy="280" rx="250" ry="120" fill="white" stroke="url(#goldGrad)" stroke-width="6"/>
+  <path d="M 280 250 Q 280 230 290 220 L 300 220 Q 310 230 310 250 Q 310 270 300 280 L 290 280 Q 280 270 280 250 Z" fill="white" stroke="#d4d4d4" stroke-width="2"/>
+  <circle cx="295" cy="245" r="8" fill="url(#sparkle)" stroke="#DAA520" stroke-width="1.5"/>
+  <path d="M 340 240 Q 340 220 350 210 L 360 210 Q 370 220 370 240 Q 370 260 360 270 L 350 270 Q 340 260 340 240 Z" fill="white" stroke="#d4d4d4" stroke-width="2"/>
+  <circle cx="355" cy="235" r="8" fill="url(#sparkle)" stroke="#DAA520" stroke-width="1.5"/>
+  <path d="M 400 235 Q 400 215 410 205 L 420 205 Q 430 215 430 235 Q 430 255 420 265 L 410 265 Q 400 255 400 235 Z" fill="white" stroke="#d4d4d4" stroke-width="2"/>
+  <circle cx="415" cy="230" r="9" fill="url(#sparkle)" stroke="#DAA520" stroke-width="1.5"/>
+  <path d="M 460 240 Q 460 220 470 210 L 480 210 Q 490 220 490 240 Q 490 260 480 270 L 470 270 Q 460 260 460 240 Z" fill="white" stroke="#d4d4d4" stroke-width="2"/>
+  <circle cx="475" cy="235" r="8" fill="url(#sparkle)" stroke="#DAA520" stroke-width="1.5"/>
+  <path d="M 520 250 Q 520 230 530 220 L 540 220 Q 550 230 550 250 Q 550 270 540 280 L 530 280 Q 520 270 520 250 Z" fill="white" stroke="#d4d4d4" stroke-width="2"/>
+  <circle cx="535" cy="245" r="8" fill="url(#sparkle)" stroke="#DAA520" stroke-width="1.5"/>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="36" fill="url(#goldGrad)" text-anchor="middle" font-weight="bold">Custom Designs</text>
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">Multiple Gems Available</text>
+</svg>
