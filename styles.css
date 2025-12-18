@@ -258,6 +258,19 @@ section {
     margin-right: 0.5rem;
 }
 
+.service-card-image {
+    padding: 0;
+    overflow: hidden;
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
 /* Gallery Section */
 .gallery-grid {
     display: grid;
@@ -312,10 +325,12 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text h2 {
@@ -332,20 +347,23 @@ section {
 
 .about-features {
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .feature {
     display: flex;
-    align-items: start;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
 }
 
 .feature i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
-    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .feature h4 {
@@ -447,6 +465,17 @@ section {
 .social-icons a:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(230, 185, 128, 0.4);
+}
+
+.payment-accepted {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.payment-accepted img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .contact-form-wrapper {
@@ -625,6 +654,14 @@ section {
 
     .about-content {
         grid-template-columns: 1fr;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-brand {
+        display: block;
     }
 
     .about-image {
