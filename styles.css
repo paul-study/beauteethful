@@ -319,6 +319,18 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.gallery-overlay-top {
+    top: 0;
+    bottom: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+    padding: 1.5rem 1.5rem 2rem;
+    transform: translateY(-100%);
+}
+
+.gallery-item:hover .gallery-overlay-top {
+    transform: translateY(0);
+}
+
 /* About Section */
 .about {
     background-color: var(--light-color);
@@ -666,6 +678,10 @@ section {
 
     .about-image {
         height: 300px;
+    }
+
+    .gallery-item.in-view .gallery-overlay {
+        transform: translateY(0);
     }
 
     .contact-content {

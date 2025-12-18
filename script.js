@@ -71,6 +71,24 @@ animatedElements.forEach(el => {
     observer.observe(el);
 });
 
+// Gallery overlay animation on scroll (mobile)
+const galleryObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        } else {
+            entry.target.classList.remove('in-view');
+        }
+    });
+}, {
+    threshold: 0.5,
+    rootMargin: '0px'
+});
+
+document.querySelectorAll('.gallery-item').forEach(el => {
+    galleryObserver.observe(el);
+});
+
 // Gallery Image Modal (Optional Enhancement)
 const galleryItems = document.querySelectorAll('.gallery-item');
 
